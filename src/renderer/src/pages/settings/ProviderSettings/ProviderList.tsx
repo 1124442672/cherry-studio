@@ -23,6 +23,7 @@ import AddProviderPopup from './AddProviderPopup'
 import ModelNotesPopup from './ModelNotesPopup'
 import ProviderSetting from './ProviderSetting'
 import UrlSchemaInfoPopup from './UrlSchemaInfoPopup'
+import { providerIdSchema } from '@cherrystudio/ai-core/provider'
 
 const logger = loggerService.withContext('ProviderList')
 
@@ -362,7 +363,7 @@ const ProviderList: FC = () => {
             </Dropdown>
           )}
         </DraggableVirtualList>
-        <AddButtonWrapper>
+        {/* <AddButtonWrapper>
           <Button
             style={{ width: '100%', borderRadius: 'var(--list-item-border-radius)' }}
             icon={<PlusIcon size={16} />}
@@ -370,7 +371,7 @@ const ProviderList: FC = () => {
             disabled={dragging}>
             {t('button.add')}
           </Button>
-        </AddButtonWrapper>
+        </AddButtonWrapper> */}
       </ProviderListContainer>
       <ProviderSetting providerId={selectedProvider.id} key={selectedProvider.id} />
     </Container>

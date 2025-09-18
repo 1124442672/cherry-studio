@@ -128,14 +128,14 @@ const HomeTabs: FC<Props> = ({
       )}
 
       <TabContent className="home-tabs-content">
-        {tab === 'assistants' && (
+        {/* {tab === 'assistants' && (
           <Assistants
             activeAssistant={activeAssistant}
             setActiveAssistant={setActiveAssistant}
             onCreateAssistant={onCreateAssistant}
             onCreateDefaultAssistant={onCreateDefaultAssistant}
           />
-        )}
+        )} */}
         {tab === 'topic' && (
           <Topics
             assistant={activeAssistant}
