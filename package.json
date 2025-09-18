@@ -239,7 +239,7 @@
     "dompurify": "^3.2.6",
     "dotenv": "^17.2.2",
     "dotenv-cli": "^7.4.2",
-    "electron": "^38.1.0",
+    "electron": "^38.1.1",
     "electron-builder": "26.0.15",
     "electron-devtools-installer": "^3.2.0",
     "electron-store": "^8.2.0",

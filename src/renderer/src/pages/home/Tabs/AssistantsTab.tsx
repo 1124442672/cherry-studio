@@ -158,7 +158,7 @@ const Assistants: FC<AssistantsTabProps> = ({
           />
         )}
       </DraggableList>
-      {!dragging && renderAddAssistantButton}
+      {/* {!dragging && renderAddAssistantButton} */}
       <div style={{ minHeight: 10 }}></div>
     </Container>
   )

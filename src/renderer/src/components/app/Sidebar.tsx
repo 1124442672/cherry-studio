@@ -14,18 +14,18 @@ import { ThemeMode } from '@renderer/types'
 import { isEmoji } from '@renderer/utils'
 import { Avatar, Tooltip } from 'antd'
 import {
-  Code,
-  FileSearch,
-  Folder,
-  Languages,
-  LayoutGrid,
+  // Code,
+  // FileSearch,
+  // Folder,
+  // Languages,
+  // LayoutGrid,
   MessageSquare,
   Monitor,
   Moon,
-  NotepadText,
-  Palette,
+  // NotepadText,
+  // Palette,
   Settings,
-  Sparkle,
+  // Sparkle,
   Sun
 } from 'lucide-react'
 import { FC } from 'react'
@@ -122,7 +122,8 @@ const Sidebar: FC = () => {
 const MainMenus: FC = () => {
   const { hideMinappPopup } = useMinappPopup()
   const { pathname } = useLocation()
-  const { sidebarIcons, defaultPaintingProvider } = useSettings()
+  // const { sidebarIcons, defaultPaintingProvider } = useSettings()
+  const { sidebarIcons } = useSettings()
   const { minappShow } = useRuntime()
   const navigate = useNavigate()
   const { theme } = useTheme()
@@ -132,26 +133,26 @@ const MainMenus: FC = () => {
 
   const iconMap = {
     assistants: <MessageSquare size={18} className="icon" />,
-    agents: <Sparkle size={18} className="icon" />,
-    paintings: <Palette size={18} className="icon" />,
-    translate: <Languages size={18} className="icon" />,
-    minapp: <LayoutGrid size={18} className="icon" />,
-    knowledge: <FileSearch size={18} className="icon" />,
-    files: <Folder size={18} className="icon" />,
-    notes: <NotepadText size={18} className="icon" />,
-    code_tools: <Code size={18} className="icon" />
+    // agents: <Sparkle size={18} className="icon" />,
+    // paintings: <Palette size={18} className="icon" />,
+    // translate: <Languages size={18} className="icon" />,
+    // minapp: <LayoutGrid size={18} className="icon" />,
+    // knowledge: <FileSearch size={18} className="icon" />,
+    // files: <Folder size={18} className="icon" />,
+    // notes: <NotepadText size={18} className="icon" />
+    // code_tools: <Code size={18} className="icon" />
   }
 
   const pathMap = {
     assistants: '/',
-    agents: '/agents',
-    paintings: `/paintings/${defaultPaintingProvider}`,
-    translate: '/translate',
-    minapp: '/apps',
-    knowledge: '/knowledge',
-    files: '/files',
-    code_tools: '/code',
-    notes: '/notes'
+    // agents: '/agents',
+    // paintings: `/paintings/${defaultPaintingProvider}`,
+    // translate: '/translate',
+    // minapp: '/apps',
+    // knowledge: '/knowledge',
+    // files: '/files',
+    // code_tools: '/code',
+    // notes: '/notes'
   }
 
   return sidebarIcons.visible.map((icon) => {
